@@ -9,6 +9,11 @@ export default function App() {
   const[isAddMode, setAddMode] = useState(false);
 
   const addGoalHandler = goalTitle => {
+
+    if(goalTitle.length === 0){
+      return;
+    }
+    
     setGoalList(currentGoals =>[
       ...currentGoals,
       {
