@@ -23,6 +23,6 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         fontSize: 18,
-        color: 'yellow'
+        color: Color.yellow,
     }
 })
