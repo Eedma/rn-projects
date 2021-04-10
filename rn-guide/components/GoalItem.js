@@ -5,7 +5,7 @@ const GoalItem = props => {
     return(
       <TouchableOpacity onPress={props.onDelete}>
         <View style={styles.listItem}>
-          <Text> {props.title}</Text>
+          <BodyBodyText> {props.title}</BodyText>
         </View>
       </TouchableOpacity>
     )

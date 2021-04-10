@@ -1,13 +1,15 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import Card from '../components/Card';
+import BodyText from '../components/BodyText';
 
 const GameOver = ({restartGame, userNumber, roundsNumber}) =>{
     return (
         <View style={styles.screen}>
             <Card>
-                <Text>The game is over</Text>
-                <Text>I spent {roundsNumber} rounds to guess it</Text>
-                <Text>Number was {userNumber}</Text>
+                <BodyText>The game is over</BodyText>
+                <BodyText>I spent {roundsNumber} rounds to guess it</BodyText>
+                <BodyText>Number was {userNumber}</BodyText>
                 <Button title="restart" onPress={restartGame} />
             </Card>
         </View>
